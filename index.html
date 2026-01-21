@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presolve360 | Dispute Filing Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ps-blue: #005082;
+            --ps-orange: #FFB04C;
+            --ps-bg: #F3F7FA;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--ps-bg);
+            color: #1e293b;
+        }
+        .ps-card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 10px 40px -10px rgba(0, 80, 130, 0.08);
+            border: 1px solid rgba(0, 80, 130, 0.05);
+        }
+        .ps-button-blue {
+            background-color: var(--ps-blue);
+            color: white;
+            transition: all 0.2s ease;
+        }
+        .ps-button-blue:hover {
+            background-color: #003d63;
+            transform: translateY(-1px);
+        }
+        .ps-button-orange {
+            background-color: var(--ps-orange);
+            color: white;
+            transition: all 0.2s ease;
+        }
+        .ps-button-orange:hover {
+            background-color: #f09d35;
+            transform: translateY(-1px);
+        }
+        .input-focus {
+            transition: all 0.2s ease;
+        }
+        .input-focus:focus {
+            border-color: var(--ps-blue);
+            box-shadow: 0 0 0 4px rgba(0, 80, 130, 0.1);
+        }
+        @keyframes subtle-float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .floating-blob {
+            animation: subtle-float 6s ease-in-out infinite;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.27.1",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
